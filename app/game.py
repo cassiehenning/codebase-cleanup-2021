@@ -1,5 +1,7 @@
 
+import os 
 from random import choice
+
 
 #
 # USER SELECTION
@@ -24,48 +26,27 @@ print("COMPUTER CHOICE:", c)
 # DETERMINATION OF WINNER
 #
 
-#if u == "rock" and c == "rock":
-#    print("It's a tie!")
-#elif u == "rock" and c == "paper":
-#    print("The computer wins")
-#elif u == "rock" and c == "scissors":
-#    print("The user wins")
-
-#elif u == "paper" and c == "rock":
-#    print("The computer wins")
-#elif u == "paper" and c == "paper":
-#    print("It's a tie!")
-#elif u == "paper" and c == "scissors":
-#    print("The user wins")
-
-#elif u == "scissors" and c == "rock":
-#    print("The computer wins")
-#elif u == "scissors" and c == "paper":
-#    print("The user wins")
-#elif u == "scissors" and c == "scissors":
-#    print("It's a tie!")
-
 if u == "rock": 
     if c == "rock": 
-        print("----")
+        print("You tied!")
     elif c == "paper":
-        print("----")
+        print("The computer won!")
     elif c == "scissors":
-        print("----")
+        print("You won!")
 elif u == "paper": 
     if c == "rock": 
-        print("----")
+        print("You won!")
     elif c == "paper":
-        print("----")
+        print("You tied!")
     elif c == "scissors":
-        print("----")
+        print("The computer won!")
 elif u == "scissors": 
     if c == "rock": 
-        print("----")
+        print("The computer won!")
     elif c == "paper":
-        print("----")
+        print("You won!")
     elif c == "scissors":
-        print("----")
+        print("You tied!")
 
 #there are even less complex ways of doing this 
 #using a single dictionary
